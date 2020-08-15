@@ -29,4 +29,5 @@ Route::get('/trainings/edit/{training}', 'TrainingController@edit')->name('train
 Route::post('/trainings/edit/{training}', 'TrainingController@update')->name('training.update');
 Route::get('/trainings/{training}/delete', 'TrainingController@delete')->name('training.delete');
 
-Route::get('/users', 'UserController@index')->name('user.index');
+Route::resource('roles', 'RoleController');
+Route::resource('users', 'UserController');
