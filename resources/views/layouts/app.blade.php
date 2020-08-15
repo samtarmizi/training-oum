@@ -37,7 +37,7 @@
                             <a class="nav-link" href="{{ route('training.index') }}">{{ __('Training Index') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('user.index') }}">{{ __('User Index') }}</a>
+                            <a class="nav-link" href="{{ route('users.index') }}">{{ __('User Index') }}</a>
                         </li>
 
                     </ul>
