@@ -20,3 +20,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/trainings', 'TrainingController@index')->name('training.index');
+Route::get('/trainings/create', 'TrainingController@create')->name('training.create');
+Route::post('/trainings/create', 'TrainingController@store')->name('training.store');
+Route::get('/trainings/{training}', 'TrainingController@show')->name('training.show');
+Route::get('/trainings/edit/{training}', 'TrainingController@edit')->name('training.edit');
+Route::post('/trainings/edit/{training}', 'TrainingController@update')->name('training.update');
+Route::get('/trainings/{training}/delete', 'TrainingController@delete')->name('training.delete');
+
+Route::get('/users', 'UserController@index')->name('user.index');

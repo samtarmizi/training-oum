@@ -14,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/trainings', 'API\TrainingController@index')->name('api.training.index');
+Route::get('/trainings/{training}', 'API\TrainingController@show')->name('api.training.show');
